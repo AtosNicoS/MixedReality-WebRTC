@@ -25,7 +25,7 @@ namespace MixedReality {
 namespace WebRTC {
 
 mrsAudioDeviceModule GlobalFactory::s_audioDeviceModule =
-    mrsAudioDeviceModule::kDefault;
+    mrsAudioDeviceModule::kLegacy;
 
 uint32_t GlobalFactory::StaticReportLiveObjects() noexcept {
   // Lock the instance to prevent shutdown if it already exists, while
